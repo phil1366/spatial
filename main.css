@@ -8,8 +8,17 @@
 	box-sizing: border-box;	
 }
 
+/* header ligne 19  */ 
+/* bloc 1 Maecenas ligne 95 */ 
+/* bloc 2 Fusce ligne 158 */
+/* bloc 3 Mauris ligne 237 */
+/* bloc 4 Aenean ligne 400 */
+/* footer ligne 447 */
+/* media queries ligne 548 */
+
 body{			
 	background-image: url('./images/banner_modif.jpg');	
+	background-attachment: fixed;
 }
 
                /* HEADER */
@@ -17,8 +26,7 @@ body{
 header{	
 	display: flex;		
 	height: 500px;
-	position: relative;	
-	
+	position: relative;		
 }
 
 header a{       /* spatial */
@@ -96,6 +104,7 @@ nav li{	       /* accueil */
 	display: flex;		
 	height: 550px;
     background: white;
+	width: 100%;
 }
 
 .bloc-h, .bloc-p{
@@ -131,20 +140,22 @@ nav li{	       /* accueil */
 	font-weight: lighter;	
 	line-height: 1.7;
 	color: rgb(179, 170, 170);	
-	width: 550px;	
+	width: 600px;	
 	padding-top: 15px;
-	padding-left: 225px;
+	padding-left: 252px;
 	margin: 0 auto;	
 }
 
-     /* bloc-p */
+                 /* bloc-p */
 
 .bloc-p{	
 	text-align: left;
 	font-family: sans-serif;
-	margin: 100px 0 70px 80px;
-	text-transform: none;
-	padding-right: 350px;
+	/*margin: 100px 50px 70px 80px;*/
+	margin-top: 100px;
+	width: 500px;
+	margin-left: 70px;
+	text-transform: none;	
 	line-height: 2;
 	font-size: 18px;
 	color: rgb(157, 149, 149);	
@@ -157,8 +168,7 @@ nav li{	       /* accueil */
 }
 
 .bloc-img{
-	display: flex;	
-	height: 600px;			
+	display: flex;		
 }
 
 .bloc-txt{
@@ -197,6 +207,7 @@ nav li{	       /* accueil */
 	text-transform: uppercase;
 	font-family: sans-serif;
 	padding-top: 45px;	
+	padding-bottom: 50px;
 }
 
 .action{
@@ -232,8 +243,9 @@ nav li{	       /* accueil */
            /* bloc 3 Mauris */
 
 #feature{	
+	display: flex;
 	background: white;
-	height: 950px;
+	height: 1000px;
 }
 
 .feat h2{
@@ -242,6 +254,7 @@ nav li{	       /* accueil */
 	text-transform: uppercase;
 	margin-left: 240px;
 	padding-top: 100px;
+	width: 700px;
 }
 
 .feat h3{	
@@ -255,165 +268,198 @@ nav li{	       /* accueil */
     font-weight: normal;	
 }
 
-#wrap{
-	position: relative;
+
+              /* blocs */
+
+.bloc3, .bloc4{
+	transform: translateX(80%);
+	width: 400px;
 }
 
-#bloc1, #bloc2, #bloc3, #bloc4{
-    display: flex;		
-}
-
-#bloc1{
-	width: 50%;	
-}
-
-#bloc2{
-	width: 50%;	
-	float: right;
-}
-
-#bloc3{	
-	width: 50%;	
-	position: relative;
-}
-
-#bloc4{	
-	width: 50%;	
-	float: right;
-	position: relative;
-}
-
-       /* bloc h3 */
-
-#bloc1 h3{
-	padding-left: 510px;
-}
-
-#bloc2 h3{		 /* Recusandae */
-	position: absolute;
-	top: 0;
-	right: 455px;
-}
-
-#bloc3 h3{
-	padding-left: 450px;
-}
-
-#bloc4 h3{
-	position: absolute;
-	bottom: 275px;
-	right: 483px;
-}
-
-           /* bloc h3-end */
-
-             /* bloc h4 */
-
-#bloc1 h4{
-	padding-left: 435px;
-	padding-top: 15px;
-}
-
-#bloc2 h4{       /* Recusandae */
-	position: absolute;
-	top: 40px;
-	right: 395px;
-}
-
-#bloc3 h4{
-	padding-left: 315px;
-	padding-top: 15px;
-}
-
-#bloc4 h4{
-	position: absolute;
-	bottom: 240px;
-	right: 275px;
-}
- 
-           /* bloc h4-end */
-
-         /* bloc paragraphe */
-
-#bloc1 p, #bloc3 p{	  /* lorem - Laudantium */
-	line-height: 2;
-	color: rgb(113, 113, 113);
-	text-align: right;	
-	padding: 25px 0 100px;
-	font-size: 20px;
-}
-
-#bloc2 p{              /* Recusandae */
-	line-height: 2;
-	color: rgb(113, 113, 113);
-	text-align: left;	
-	position: absolute;
-	top: 85px;
-	right: 250px;
-	font-size: 20px;
-}
-
-#bloc4 p{	
-	line-height: 2;
-	color: rgb(113, 113, 113);
-	text-align: left;		
-	font-size: 20px;
-	position: absolute;
-	bottom: 95px;
-	right: 240px;
-}
-
-           /* bloc paragraphe-end */
-
-                 /* images */
-
-#bloc1 img, #bloc2 img, #bloc3 img, #bloc4 img{	
+.bloc1 img, .bloc2 img, .bloc3 img, .bloc4 img{	
 	width: 150px;
 	height: 150px;
 	/*clip-path: circle(40%);*/
 	border: 8px solid #E5DCDC;
-	border-radius: 50%;
+	border-radius: 50%;	
 }
 
-#bloc1 img, #bloc3 img{
-	margin-left: 100px;
+.picture{
+	position: relative;
 }
 
-#bloc2 img{
-	margin-left: 40px;
+.bloc1 h3, .bloc1 h4{
 	position: absolute;
-	top: 0;
-}
-
-#bloc4 img{
-	position: absolute;
-	bottom: 150px;
-	left: 50px;
-}
-
-                /* images-end */
-
-.wrapper h3{
-    font-size: 20px;
-	font-family: sans-serif;
-	text-transform: uppercase;	
-}
-
-.wrapper h4{
-	font-size: 17px;
+	left: 490px;
+    font-size: 22px;
 	font-family: sans-serif;
 	text-transform: uppercase;
-	color: rgb(176, 173, 173);
-    font-weight: normal;
+	margin-left: 0;
+	margin-top: 350px;
+	padding-bottom: 20px;
 }
 
-            /* bloc 3-end */
+.bloc1 h4{
+	font-size: 18px;
+	margin-left: -75px;
+	margin-top: 400px;
+	color: rgb(147, 145, 145);
+	font-weight: normal;
+	padding-bottom: 30px;
+}
 
-		   /* bloc 4 contact*/
+.bloc1 p, .bloc2 p{
+	position: absolute;
+	left: 260px;		
+	font-size: 22px;
+	text-align: right;
+	line-height: 1.3;
+	padding-bottom: 80px;
+	color: rgb(147, 145, 145);
+}
+
+.bloc1 p{
+	margin-top: 460px;
+	margin-left: -75px;	
+}
+
+.img1{
+	position: absolute;
+	left: -200px;
+	top: 345px;
+}
+
+.bloc2 h3, .bloc2 h4{
+	position: absolute;		    
+	font-family: sans-serif;
+	text-transform: uppercase;		
+}
+
+.bloc2 h3{
+	left: 420px;
+	margin-top: 640px;	
+	font-size: 22px;
+	padding-bottom: 20px;
+}
+
+.bloc2 h4{
+	font-size: 18px;
+	margin-top: 690px;	
+	left: 285px;
+	color: rgb(147, 145, 145);
+	font-weight: normal;
+	padding-bottom: 30px;
+}
+
+.bloc2 p{
+	margin-top: 750px;
+	margin-left: -50px;	
+}
+
+.img2{
+	position: absolute;
+	left: -200px;
+	top: 640px;
+}
+
+.bloc3 h3, .bloc3 h4{
+	position: absolute;	
+	font-family: sans-serif;
+	text-transform: uppercase;		
+	padding-bottom: 20px;
+}
+
+.bloc3 h3{
+	font-size: 22px;
+	margin-top: 350px;
+	width: 230px;
+	right: 210px;   
+}
+
+.bloc3 h4{
+	font-size: 18px;	
+	color: rgb(147, 145, 145);
+	font-weight: normal;
+	padding-bottom: 30px;
+	right: 150px;
+	top: 400px;
+	width: 290px;
+}
+
+.bloc3 p{
+	position: absolute;
+	right: 50px;		
+	font-size: 22px;
+	text-align: left;
+	line-height: 1.3;
+	padding-bottom: 80px;
+	color: rgb(147, 145, 145);
+}
+
+.bloc3 p{
+	margin-top: 460px;
+	margin-right: -110px;	
+	width: 500px;	
+}
+
+.img3{
+	position: absolute;
+	right: 540px;
+	top: 345px;	
+}
+
+.bloc4 h3, .bloc4 h4{	
+	font-family: sans-serif;
+	text-transform: uppercase;		
+	padding-bottom: 20px;
+}
+
+.bloc4 h3{
+	position: absolute;
+	font-size: 22px;
+	margin-top: 650px;
+	width: 230px;
+	right: 610px;
+}
+
+.bloc4 h4{	
+	font-size: 18px;
+	
+	font-weight: normal;	
+	margin-top: 700px;
+	margin-left: -440px;
+	width: 450px;
+	color: rgb(147, 145, 145);
+}
+
+.bloc4 p{
+	position: absolute;
+	right: 340px;
+	margin-top : 15px;
+	width: 500px;
+	font-size: 22px;
+	text-align: left;
+	line-height: 1.3;
+	padding-bottom: 80px;
+	color: rgb(147, 145, 145);
+}
+
+.img4{
+	position: absolute;
+	right: 930px;
+	bottom: -50px;	
+	
+}
+
+                /* bloc 3 Mauris-end */
+
+		      /* bloc 4 Aenean contact */
 
 .contact{
 	display: flex;
-	height: 500px;	
+	width: 900px;
+	margin: 0 auto;	
+	height: 550px;	
 	flex-direction: column;	
 	color: white;
 	font-family: sans-serif;
@@ -422,14 +468,15 @@ nav li{	       /* accueil */
 
 .contact h2{	
 	text-align: center;
-	font-size: 3.5em;	
+	font-size: 3em;	
 	margin-top: 130px;
 }
 
 .contact p{		
 	text-align: center;
 	margin-top: 30px;
-	font-size: 2em;	
+	margin-bottom: 30px;
+	font-size: 1.8em;	
 	font-weight: normal;
 	color: rgb(179, 170, 170);
 }
@@ -445,10 +492,10 @@ nav li{	       /* accueil */
 	font-weight: bolder;
 	cursor: pointer;
 	width: 330px;
-	padding: 25px;
+	padding: 22px;
 	padding-top: 33px;
 	border: none;
-	margin: 50px auto;
+	margin: 50px auto;	
 }
 
         /* bloc 4 contact-end*/
@@ -467,7 +514,7 @@ footer{
 .icons{
     display: flex;
 	padding-top: 80px;
-	transform: translateX(20%);   
+	transform: translateX(15%);   
 }
 
 .icons li{
@@ -495,7 +542,7 @@ footer{
 
 .copyright{
 	display: flex;
-	transform: translateX(10%);
+	transform: translateX(3%);
 	margin-top: -80px;
 }
 
@@ -525,6 +572,256 @@ img{
 }
 
           /* media queries */
+
+@media (min-width: 993px) and (max-width: 1362px){
+	
+	/* header */
+    header{				
+		height: 350px;			
+	}
+	#bloc-centre{   	
+		transform: translateY(-55%);	
+	}
+	#bloc-centre h1{
+		font-size: 2.3em;
+	}
+	#bloc-centre h2{
+		font-size: 1.3em;
+	}
+	.button{
+		font-size: 20px;	
+        padding: 20px;
+        width: 220px;        
+        margin: 40px;        
+	}
+
+	/* bloc 1 */
+	.bloc-texte{			
+		height: 620px;	
+	}		
+
+	/* bloc-h */	
+	.bloc-h h2{			
+		font-size: 35px;
+		padding-left: 50px;
+	}	
+	.bloc-h h3{		
+		font-size: 35px;		
+		transform: translateX(28%);	
+	}	
+	.bloc-h p{		
+		font-size: 18px;				
+		padding-left: 150px;	
+	}	
+	/* bloc-p */	
+	.bloc-p{			
+		margin: 100px 100px 0 40px;	
+		font-size: 15px;			
+	}	
+
+	/* bloc 2 Fusce */
+
+    .bloc-img{
+	    height: 300px;			
+    }
+	#bloc1 img, #bloc2 img, #bloc3 img, #bloc4 img{	
+		width: 140px;
+		height: 140px;		
+	}
+	
+	#bloc1 img, #bloc3 img{
+		margin-left: 40px;
+	}
+
+    .bloc-image1, .bloc-image2{    			
+	    width: 46.5%;	
+	    margin-top: -80px;
+		margin-bottom: -40px;
+    }
+    .bloc-image1{
+	    margin-right: 10px;
+    }
+    .bloc-txt{	
+	    padding: 90px 0 90px;	
+    }
+    .bloc-txt h2{
+	    font-size: 35px;
+    }
+    .bloc-txt p{
+	    font-size: 18px;	
+	    padding-top: 20px;			
+    }
+    .bloc-image1 h3, .bloc-image2 h3{
+        font-size: 19px;        
+        padding-top: 40px;			
+    }   
+    .action a{
+		margin-top: 25px;
+	    padding: 18px;
+	    font-size: 20px;	
+	    margin-bottom: 90px;
+    }
+
+    .action .btn-red{   
+	    width: 230px;
+    }
+    .action .btn-black{ 
+	    width: 230px;
+    }
+     
+	/* bloc 3 Mauris */	
+	#feature{		         
+		height: 800px;     
+	}	
+	.feat h2{              
+		font-size: 37px;	
+		margin-left: 20px;	
+	}	
+	.feat h3{	
+		margin-left: 20px;
+		font-size: 19px;
+		padding-bottom: 70px;		
+	}	
+	                        /* lorem */	
+	.bloc1 h3{
+		padding-left: 200px;
+		font-size: 16px;		
+	}
+	.bloc1 h4{
+		padding-left: 148px;
+		font-size: 13px;
+	}
+	.bloc1 p{			
+		font-size: 17px;
+		padding-bottom: 60px;
+		margin-right: 5px;
+		margin-left: 20px;
+	}
+
+	
+	.bloc2 h3{		      /* Recusandae */		
+		font-size: 16px;
+		right: 125px;
+	}
+	.bloc2 h4{   
+		right: 85px;
+		font-size: 13px;
+	}
+	.bloc2 p{       
+		right: 0;
+		font-size: 18px;
+	}
+	.bloc2 img{
+		margin-left: 40px;
+		position: absolute;
+		top: 0;
+	}
+
+
+	.bloc3 h3{             /* Laudantium */	
+		padding-left: 150px;
+		font-size: 16px;		
+	}
+	.bloc3 h4{
+		padding-left: 55px;
+		padding-top: 15px;
+		font-size: 13px;
+	}
+	.bloc3 p{	  	
+		font-size: 17px;
+		padding-bottom: 60px;
+		margin-left: 25px;
+	}
+	
+                           /* Porro */	
+	.bloc4 h3{
+		position: absolute;
+		bottom: 275px;
+		right: 483px;
+	}
+	.bloc4 h4{
+		position: absolute;
+		bottom: 240px;
+		right: 50px;
+	}
+	.bloc4 p{	
+		line-height: 2;
+		color: rgb(113, 113, 113);
+		text-align: left;		
+		font-size: 20px;
+		position: absolute;
+		bottom: 95px;
+		right: 240px;
+	}	
+	.bloc4 img{
+		position: absolute;
+		bottom: 150px;
+		left: 50px;
+	}
+	
+	
+	
+	.wrapper h3{
+		font-size: 20px;
+		font-family: sans-serif;
+		text-transform: uppercase;	
+	}
+	
+	.wrapper h4{
+		font-size: 17px;
+		font-family: sans-serif;
+		text-transform: uppercase;
+		color: rgb(176, 173, 173);
+		font-weight: normal;
+	} 
+
+
+
+
+
+	/* bloc 4 Aenean-contact */	
+	.contact{
+		height: 400px;
+	}	
+	.contact h2{			
+		font-size: 2.2em;	
+		margin-top: 100px;
+	}	
+	.contact p{				
+		font-size: 1.2em;
+		margin-bottom: -10px;	
+	}	
+	.contact a{	     /* bouton */		
+		font-size: 20px;		
+		width: 260px;
+		padding: 20px;
+		padding-top: 20px;		
+	}
+
+	/* footer */ 
+	footer{				
+		height: 300px;		
+	}	
+	.icons, .copyright{
+		width: 480px;
+	}
+	.icons li{	
+		margin-top: -120px;
+	}		
+	.icons li:last-child{   /*instagram-logo */	
+		margin-top: -115px;
+	}		
+	.icons img{
+		width: 17%;	
+	}	
+	.copyright{	
+		transform: translateX(7%);
+		margin-top: -20px;
+	}	
+	.copyright li{		
+		font-size: 15px;		
+	}		
+}		  
 
 		    /* Tablette */
 
